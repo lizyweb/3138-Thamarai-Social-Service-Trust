@@ -1,0 +1,1930 @@
+`<!DOCTYPE html>
+
+<html lang="en">
+
+
+
+<head>
+
+  <meta charset="utf-8">
+
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+
+
+  <title>Thamarai Trust Social Service</title>
+
+  <meta content="" name="description">
+
+  <meta content="" name="keywords">
+
+
+
+  <!-- Favicons -->
+
+  <link href="assets/img/favicon.png" rel="icon">
+
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+
+
+  <!-- Google Fonts -->
+
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,600,600i,700,700i|Satisfy|Comic+Neue:300,300i,400,400i,700,700i" rel="stylesheet">
+
+
+
+  <!-- Vendor CSS Files -->
+
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.3/dist/index.bundle.min.js"></script>
+
+
+
+  <!-- Template Main CSS File -->
+
+  <link href="assets/css/style.css" rel="stylesheet">
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+
+  <!-- =======================================================
+
+  * Template Name: Delicious
+
+  * Updated: Jan 29 2024 with Bootstrap v5.3.2
+
+  * Template URL: https://bootstrapmade.com/delicious-free-restaurant-bootstrap-theme/
+
+  * Author: BootstrapMade.com
+
+  * License: https://bootstrapmade.com/license/
+
+  ======================================================== -->
+
+
+
+ 
+
+
+
+  </head>
+
+<body>
+
+
+
+  <script>
+
+    $(document).ready(function() {
+
+      var folder = "/assets/img/gallery"; // Path to your folder containing images
+
+      var gallery = $('#galleryimges');
+
+
+
+    
+
+      // Function to load images from the folder
+
+      function loadGallery() {
+
+        $.ajax({
+
+          url: folder,
+
+          success: function(data) {
+
+            $(data).find('a').attr('href', function(index, filename) {
+
+              if (filename.match(/\.(jpe?g|png|gif)$/)) {   
+
+                gallery.append('<div class="gallery-item">');  
+
+                gallery.append('<a href="'  + filename + '" class="gallery-lightbox"><img class="img-fluid" width="100px" height="100px" src="' + filename + '"></img></a>');
+
+                gallery.append('</div>');
+
+              }
+
+
+
+            });
+
+            
+
+
+
+          }
+
+        });
+
+      }
+
+      loadGallery();
+
+    
+
+});
+
+
+
+      // Call the function to load the gallery on page load
+
+      
+
+</script>
+
+
+
+
+
+
+
+  <!-- ======= Header ======= -->
+
+  <header id="header" class="fixed-top d-flex align-items-center header-transparent">
+
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+
+
+      <div class="logo me-auto">
+
+        <h5> 
+
+          <a href="index.html"><img src="assets/img/logo.jpg" alt="" class="img-fluid"></a> 
+
+
+
+          <a href="index.html"><b>Thamarai </b> Social Service Trust</a></h5>
+
+        <!-- Uncomment below if you prefer to use an image logo -->
+
+      </div>
+
+
+
+      <nav id="navbar" class="navbar order-last order-lg-0">
+
+        <ul>
+
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+
+          <li><a class="nav-link scrollto" href="#about">About</a></li>
+
+          <li><a class="nav-link scrollto" href="#visionmission">Vision & Mission</a></li>
+
+          <li><a class="nav-link scrollto" href="#programmes">Programmes</a></li>
+
+          <!-- 
+
+          <li class="dropdown"><a href="#"><span>Programmes </span> <i class="bi bi-chevron-down"></i></a>
+
+            <ul>
+
+              <li class="dropdown"><a href="#"><span>Covid-19</span> <i class="bi bi-chevron-right"></i></a>
+
+                <ul>
+
+                  <li><a href="#">Free Distribution </a></li>
+
+                  <li><a href="#">Covid-19 Awareness</a></li>
+
+                  <li><a href="#">Siddha Medicines</a></li>
+
+                </ul>
+
+              </li>
+
+              <li class="dropdown"><a href="#"><span>Women & Children</span> <i class="bi bi-chevron-right"></i></a>
+
+                <ul>
+
+                  <li><a href="#">Free Distribution </a></li>
+
+                  <li><a href="#">Women Empowerment</a></li>
+
+                  <li><a href="#">Children Day Celebration</a></li>
+
+                  <li><a href="#">Free Tuition</a></li>
+
+                </ul>
+
+              </li>
+
+              <li><a href="#">Free Food </a></li>
+
+              <li><a href="#">Culture Building & Awaraness</a></li>
+
+            </ul>
+
+          </li>
+
+          -->
+
+          <li><a class="nav-link scrollto" href="#objectives">Objectives</a></li>
+
+
+
+                    
+
+          <li><a class="nav-link scrollto" href="#gallery">Gallery</a></li>
+
+
+
+      
+
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+
+        </ul>
+
+        <i class="bi bi-list mobile-nav-toggle"></i>
+
+      </nav><!-- .navbar -->
+
+      <a href="#donation" class="book-a-table-btn scrollto">Donation</a>
+
+      
+
+    </div>
+
+  </header><!-- End Header -->
+
+
+
+  <!-- ======= Hero Section ======= -->
+
+  <section id="hero">
+
+    <div class="hero-container">
+
+      <div id="heroCarousel" data-bs-interval="5000" class="carousel slide carousel-fade" data-bs-ride="carousel">
+
+
+
+        <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
+
+
+
+        <div class="carousel-inner" role="listbox">
+
+
+
+          <!-- Slide 1 -->
+
+          <div class="carousel-item active" style="background-image: url(assets/img/slide/slide-1.jpg);">
+
+            <div class="carousel-container">
+
+              <div class="carousel-content">
+
+                <h2 class="animate__animated animate__fadeInDown"><span>Thamari Social Service</span> Trust</h2>
+
+
+
+                <p class="animate__animated animate__fadeInUp">
+
+                  Thamarai Social Service Trust is a voluntary Organization working for the education, health  and women’s empowerment in the Underprivileged communities, especially with children and women.                
+
+                </p>
+
+                <div>
+
+                  <a href="#about" class="btn-menu animate__animated animate__fadeInUp scrollto">Who we are</a>
+
+                  <a href="#programmes" class="btn-book animate__animated animate__fadeInUp scrollto">Charity Programmes</a>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+
+          <!-- Slide 2 -->
+
+          <div class="carousel-item" style="background-image: url(assets/img/slide/slide-2.jpg);">
+
+            <div class="carousel-container">
+
+              <div class="carousel-content">
+
+                <h2 class="animate__animated animate__fadeInDown">Our Focus</h2>
+
+                <p class="animate__animated animate__fadeInUp">
+
+                  To work with the rural and urban people who are all belongs to socially economically weaker Women, Men, Widows, Destitute, Orphans, Physically and Mentally challenged Persons and Unemployed Youths and Children with nutritional complaints
+
+                  <div>
+
+                  <a href="#about" class="btn-menu animate__animated animate__fadeInUp scrollto">Who we are</a>
+
+                  <a href="#programmes" class="btn-book animate__animated animate__fadeInUp scrollto">Charity Programmes</a>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+
+
+
+        </div>
+
+
+
+        <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
+
+          <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+
+        </a>
+
+
+
+        <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
+
+          <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+
+        </a>
+
+
+
+      </div>
+
+    </div>
+
+
+
+  </section><!-- End Hero -->
+
+
+
+  <main id="main">
+
+
+
+    <!-- ======= About Section ======= -->
+
+    <section id="about" class="about">
+
+      <div class="container-fluid">
+
+
+
+        <div class="row">
+
+
+
+          <div class="col-lg-4 align-items-stretch video-box" style='border-radius: 50%; background-image: url("assets/img/about.jpg");'>
+
+          </div>
+
+
+
+          <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch">
+
+
+
+            <div class="content">
+
+              <h3>About Us</strong></h3>
+
+              <p>
+
+                <b>Thamarai Social Service Trust </b>is a service oriented trust. 
+
+                The trust is established on 13th Day of March 2019 for servicing the down drone people. It is a registered organization under the Indian Trust Act. The trust should serve the people in all aspects and supporting them in poverty alleviation.
+
+              </p>
+
+              </p>
+
+            </div>
+
+
+
+          </div>
+
+
+
+        </div>
+
+
+
+      </div>
+
+    </section><!-- End About Section -->
+
+    <!-- ======= Vision & Mission Section ======= -->
+
+
+
+    <section id="visionmission" class="about">
+
+      <div class="container-fluid">
+
+
+
+        <div class="row" style="margin-top:20px">
+
+
+
+          <div class="col-lg-8 d-flex flex-column justify-content-center align-items-stretch">
+
+
+
+            <div class="content" style="margin-top:20px;">
+
+              <h3>Vision</strong></h3>
+
+              <p>
+
+                “ To serve the people and bringing the improvement in the lives of poor in economically, <br/>healthy through various ways and working for the sustainable growth of the poor. ”
+
+              </p>
+
+              <h3>Mission</strong></h3>
+
+              <p>
+
+                “Collaborating with governments, corporate and main stream institutions and to conduct, <br/>train the deserved people in various development methods and creating livelihood for the poor”
+
+              </p>
+
+               
+
+            </div>
+
+
+
+          </div>
+
+          <div class="col-lg-3 text-center order-1 order-lg-2">
+
+            <img src="assets/img/vision.jpg" width="300px;" height="300px" alt="" class="rounded-circle">
+
+          </div>
+
+
+
+
+
+        </div>
+
+        <br/>
+
+        <br/>
+
+      </div>
+
+    </section><!-- End visionmission Section -->
+
+
+
+    <!-- ======= orgbelieves Section ======= -->
+
+
+
+    <section id="orgbelieves" class="about">
+
+      <div class="container-fluid">
+
+
+
+        <div class="row">
+
+
+
+          <div class="col-lg-5 align-items-stretch video-box" style='background-image: url("assets/img/org.png");'>
+
+          </div>
+
+
+
+          <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch">
+
+
+
+            <div class="content">
+
+              <h3>Organization Believes</strong></h3>
+
+              <ul>
+
+                <li><i class="bx bx-check-double"></i> In the potential power of the poor and rural people to participate actively in development initiatives within their community.                </li>
+
+                <li><i class="bx bx-check-double"></i>In equal opportunity for man and women in society irrespective of class, age,ethnic, culture or religion.</li>
+
+                <li><i class="bx bx-check-double"></i> All Human Rights for all. </li>
+
+                <li><i class="bx bx-check-double"></i>  In freedom of expression, movement and choice by man and women alike.
+
+                </li>
+
+                <li><i class="bx bx-check-double"></i> In social harmony free from communal bias.
+
+                </li>
+
+                <li><i class="bx bx-check-double"></i> Freedom for work, education and development.
+
+                </li>
+
+              </ul>
+
+
+
+            </div>
+
+
+
+          </div>
+
+
+
+        </div>
+
+
+
+      </div>
+
+    </section><!-- End visionmission Section -->
+
+
+
+
+
+    <section id="objectives" class="specials">
+
+      <div class="container">
+
+        <div class="section-title">
+
+          <h2>Our  <span>Objectives</span></h2>
+
+        </div>
+
+
+
+        <div class="row">
+
+          <div class="col-lg-3">
+
+            <ul class="nav nav-tabs flex-column">
+
+              <li class="nav-item">
+
+                <a class="nav-link active show" data-bs-toggle="tab" href="#tab-1">Education</a>
+
+              </li>
+
+              <li class="nav-item">
+
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-2">Healthcare</a>
+
+              </li>
+
+              <li class="nav-item">
+
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-3">Social</a>
+
+              </li>
+
+              <li class="nav-item">
+
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-4">Farming & Women Empowerment.</a>
+
+              </li>
+
+
+
+            </ul>
+
+          </div>
+
+          <div class="col-lg-9 mt-4 mt-lg-0">
+
+            <div class="tab-content">
+
+              <div class="tab-pane active show" id="tab-1">
+
+                <div class="row">
+
+                  <div class="col-lg-8 details order-2 order-lg-1">
+
+                    <h3>Financial assistance to the poor students</h3>
+
+                    <p class="fst-italic" style="font-size: 14px">To promote science and arts colleges, siddha, Homeopathy, ayurvedic, medical college and research centres, technical and non technical institutions, computer education centres, schools, research centres and other educational institutions and to provide financial assistance for poor students.</p><p class="fst-italic" style="font-size: 14px"> To impart knowledge on aged care and welfare to the general public through awareness programs in rural and urban areas.</p>
+
+                    <p class="fst-italic" style="font-size: 14px"> To run special education centre for training the teachers to handle the physically disabled and mentally retarded children and schools for them.</p>
+
+                    <p class="fst-italic" style="font-size: 14px">To run the chreche’s and balwadies for infants and young children and establish libraries, tuition centres, study centres</p>
+
+                  </div>
+
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+
+                    <img src="assets/img/education.jpg" width="300px;" height="300px" alt="" class="rounded-circle">
+
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="tab-pane" id="tab-2">
+
+                <div class="row">
+
+                  <div class="col-lg-8 details order-2 order-lg-1">
+
+                    <h3>Public Health</h3>
+
+                    <p class="fst-italic" style="font-size: 14px"> To undertake laboratory, clinical and community research works for the development and run general hospitals, free medical camps.</p>
+
+                    <p class="fst-italic" style="font-size: 14px">To create awareness in De-addiction camps, medical camps, AIDS and prevention camp.</p> 
+
+                    <p class="fst-italic" style="font-size: 14px">Nutritional disorder camps for children and to develop and integrate the health system for women and children.</p>                   
+
+                  </div>
+
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+
+                    <img src="assets/img/health.jpg" width="300px;" height="300px" alt="" class="rounded-circle">
+
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="tab-pane" id="tab-3">
+
+                <div class="row">
+
+                  <div class="col-lg-8 details order-2 order-lg-1">
+
+                    <h3>Social</h3>
+
+                    <p class="fst-italic" style="font-size: 14px">To undertake the projects in tank and pond renovation for safe drinking water.</p>
+
+                    <p class="fst-italic" style="font-size: 14px"> Create awareness in sanitation and hygiene.</p> 
+
+                    <p class="fst-italic" style="font-size: 14px"> To establish the rehabilitation centres for disabled persons.</p>
+
+                    <p class="fst-italic" style="font-size: 14px"> To do awareness for the protection and improvement of environment to global warming.</p>
+
+                    <p class="fst-italic" style="font-size: 14px"> To impart skill training and vocation education to the unemployed youth and homemakers in various trades for their economic development </p>
+
+                    <p class="fst-italic" style="font-size: 14px"> To extend the support and provide free food, cloth and medical aid to the needy people during natural calamities period. </p>
+
+                  </div>
+
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+
+                    <img src="assets/img/social.jpg" width="300px;" height="300px" alt="" class="rounded-circle">
+
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="tab-pane" id="tab-4">
+
+                <div class="row">
+
+                  <div class="col-lg-8 details order-2 order-lg-1">
+
+                    <h3>Farming & Women Empowerment</h3>
+
+                    <p class="fst-italic" style="font-size: 14px">Traditional yoga and meditation training will be conducted for the improvement of health.</p>
+
+                    <p class="fst-italic" style="font-size: 14px">To educate and train the sustainable way of farming, water management, wasteland management, herbal plantation to farmers and doing the training and awareness in cattle rearing, animal husbandry and other farming activities for the upliftment of the farmers.</p>
+
+                    <p class="fst-italic" style="font-size: 14px"> To work for the economic, social and educational empowerment of women, widows, destitute and orphans. Homes can established for old age people , working women’s hostel .</p>
+
+                  </div>
+
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+
+                    <img src="assets/img/misc.jpg" width="300px;" height="300px" alt="" class="rounded-circle">
+
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="tab-pane" id="tab-5">
+
+                <div class="row">
+
+                  <div class="col-lg-8 details order-2 order-lg-1">
+
+                    <h3>Est eveniet ipsam sindera pad rone matrelat sando reda</h3>
+
+                    <p class="fst-italic">Omnis blanditiis saepe eos autem qui sunt debitis porro quia.</p>
+
+                    <p>Exercitationem nostrum omnis. Ut reiciendis repudiandae minus. Omnis recusandae ut non quam ut quod eius qui. Ipsum quia odit vero atque qui quibusdam amet. Occaecati sed est sint aut vitae molestiae voluptate vel</p>
+
+                  </div>
+
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+
+                    <img src="assets/img/specials-5.jpg" alt="" class="img-fluid">
+
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="tab-pane" id="tab-6">
+
+                <div class="row">
+
+                  <div class="col-lg-8 details order-2 order-lg-1">
+
+                    <h3>Est eveniet ipsam sindera pad rone matrelat sando reda</h3>
+
+                    <p class="fst-italic">Omnis blanditiis saepe eos autem qui sunt debitis porro quia.</p>
+
+                    <p>Exercitationem nostrum omnis. Ut reiciendis repudiandae minus. Omnis recusandae ut non quam ut quod eius qui. Ipsum quia odit vero atque qui quibusdam amet. Occaecati sed est sint aut vitae molestiae voluptate vel</p>
+
+                  </div>
+
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+
+                    <img src="assets/img/specials-5.jpg" alt="" class="img-fluid">
+
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+
+      </div>
+
+    </section><!-- End Specials Section -->
+
+
+
+
+
+    <section id="programmes" class="specials">
+
+      <div class="container">
+
+        <div class="section-title">
+
+          <h2>Our  <span>Programmes</span></h2>
+
+        </div>
+
+
+
+
+
+        <div class="row">
+
+          <div class="col-lg-3">
+
+
+
+            <ul class="nav nav-tabs flex-column" >
+
+                <li class="nav-item">
+
+                  <a class="nav-link active show" data-bs-toggle="tab" href="#tab-21">FREE DISTRIBUTION </a>
+
+                </li>
+
+                <li class="nav-item">
+
+                  <a class="nav-link" data-bs-toggle="tab" href="#tab-22"> COVID -19 </a>
+
+                </li>
+
+                <li class="nav-item">
+
+                  <a class="nav-link" data-bs-toggle="tab" href="#tab-23">SIDDHA MEDICINES</a>
+
+                </li>
+
+                <li class="nav-item">
+
+                  <a class="nav-link" data-bs-toggle="tab" href="#tab-24">FREE FOOD</a>
+
+                </li>
+
+                <li class="nav-item">
+
+                  <a class="nav-link" data-bs-toggle="tab" href="#tab-25">SKILL DEVELOPMENT </a>
+
+                </li>
+
+
+
+                <li class="nav-item">
+
+                  <a class="nav-link" data-bs-toggle="tab" href="#tab-31">WOMEN EMPOWERMENT  </a>
+
+                </li>
+
+                <li class="nav-item">
+
+                  <a class="nav-link" data-bs-toggle="tab" href="#tab-32"> CULTURE BUILDING AND AWARENESS </a>
+
+                </li>
+
+                <li class="nav-item">
+
+                  <a class="nav-link" data-bs-toggle="tab" href="#tab-33">CHILDREN DAY CELEBRATION </a>
+
+                </li>
+
+                <li class="nav-item">
+
+                  <a class="nav-link" data-bs-toggle="tab" href="#tab-34">YOGA AWARENESS </a>
+
+                </li>
+
+                <li class="nav-item">
+
+                  <a class="nav-link" data-bs-toggle="tab" href="#tab-35">FREE TUITION </a>
+
+                </li>
+
+
+
+
+
+            </ul>
+
+          </div>
+
+          <div class="col-lg-9 mt-4 mt-lg-0">
+
+            <div class="tab-content">
+
+              <div class="tab-pane active show" id="tab-21">
+
+                <div class="row">
+
+                  <div class="col-lg-12 details order-2 order-lg-1">
+
+                    <h3>Free Distribution ( Mask and Sanitizer for the poor people )  </h3>
+
+                    <p class="fst-italic" style="font-size: 14px">
+
+                      The world facing a very serious and emergency problem is  COVID -19. The virus spread all over the world and threaten the people’s lives. To control the pandemic the government announced the lockdown system. So many people lost their employment and the earning capability.
+
+                      </p>
+
+                      <p class="fst-italic" style="font-size: 14px"> 
+
+                        The trust aware its roll and help the people in distributing Masks and Sanitizer to the poor people who cannot afford to purchase. Nearly 500 people are benefited through this. The trust distributes the Masks and Sanitizer to help the poor in protecting themselves from pandemic corona virus.  
+
+                      </p>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="tab-pane" id="tab-22">
+
+                <div class="row">
+
+                  <div class="col-lg-12 details order-2 order-lg-1">
+
+                    <h3>
+
+                      COVID -19 Awareness Programme
+
+                    </h3>
+
+                    <p class="fst-italic" style="font-size: 14px">
+
+                      The word corona refers the virus but it affects not only the health of the people it also affect the life of the people in this world. The world never faces a problem like this in the past years. This is the crucial period for all the persons living in this world.
+
+                    </p>
+
+                    <p class="fst-italic" style="font-size: 14px"> 
+
+                      The person doesn’t face these kinds of pandemic situations in last year so handling the situation was very tough even for the government.  As we are the actors of government we should involve in the implementation of awareness creation of protecting self from pandemic.
+
+                    </p>
+
+                    <p class="fst-italic" style="font-size: 14px">
+
+                      we gave awareness to the people in wearing    masks, keep on sanitize the hands and living places, maintaining social distancing and queue in shops and other places. Avoid the hand and the eye contacts directly. To avoid kiss the kids and children directly.
+
+                    </p>
+
+                    <p class="fst-italic" style="font-size: 14px"> 
+
+                      Maintain self hygiene and environmental cleanliness. Sanitize and maintain cleanliness in houses and near our houses. Dos and Don’ts were educated to the rural children and women.
+
+                    </p>
+
+
+
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="tab-pane" id="tab-23">
+
+                <div class="row">
+
+                  <div class="col-lg-12 details order-2 order-lg-1">
+
+                    <h3>Siddha Medicines Issue for poor   </h3>
+
+                    <p class="fst-italic" style="font-size: 14px"> 
+
+                      The word siddha is the powerful medicated word in curing the diseases traditionally. Covid-19 vaccines were also not aware in this period. Medicines also not identified for Covid-19. So in hospitals hydroxyl choloroquine tablets were given to the Covid-19 patients. But the curing rate is very less in these tablets.
+
+                    </p>
+
+                    <p class="fst-italic" style="font-size: 14px"> 
+
+                      But in India we are having traditional medical practices like Siddha, Unani, Ayurveda and Homeopathy. Siddha medicine is one among the best medical practices in India. So the trust issue siddha medicine for the pre protects of Covid-19 attack as well as post Covid-19 recovery patients. So nearly 650 packets were distributed in and around the Madurai district of Tamilnadu. So we imitated to protect the lives of the poor through siddha medicines. The people took the intake of medicine and protect by themselves through improve their immunity.
+
+                    </p>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="tab-pane" id="tab-24">
+
+                <div class="row">
+
+                  <div class="col-lg-12 details order-2 order-lg-1">
+
+                    <h3>Free Food for poor</h3>
+
+                    <p class="fst-italic" style="font-size: 14px"> 
+
+                      Unemployment is one of the serious problems in India. Unemployment of youth is the common problem in day-to-day life. But loose of employment is a different kind of issue. This pandemic period realizes all the people about the normal life. Even daily wage employees are much affected due to lockdown. They can’t earn the money daily so there is a hunger problem arises everywhere. Even normal people can’t get their regular foods.
+
+                    </p>
+
+                    <p class="fst-italic" style="font-size: 14px"> 
+
+                      To help the hunger poor we distributed free food for poor. Mixed Rice recipes were prepared and distributed to the people in slums. 1000 packed food items distributed in the slums and road side living people.
+
+                    </p>
+
+
+
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="tab-pane" id="tab-25">
+
+                <div class="row">
+
+                  <div class="col-lg-12 details order-2 order-lg-1">
+
+                    <h3>Skill Development Programme</h3>
+
+                    <p class="fst-italic" style="font-size: 14px"> 
+
+                      Thamarai Social service trust running the skill development center. In the skill development centre we are running the tailoring and Embroidery course for Women. 6 months training is given to the women and makes them as self employed. Nearly 15 students were benefited through this. 3 among them are earning through tailoring and improving their monthly income.
+
+                    </p>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="tab-pane" id="tab-31">
+
+                <div class="row">
+
+                  <div class="col-lg-12 details order-2 order-lg-1">
+
+                    <h3>Women Empowerment Programme</h3>
+
+                    <p class="fst-italic" style="font-size: 14px"> 
+
+                      Women are the back bone of their family. Women should prize by all of us. They are participating equally in all the fields. For the better world women should seek a space to share their thoughts and ideas. Provide increased opportunities for women’s education, employment and entrepreneurship.
+
+                    </p>
+
+                    <p class="fst-italic" style="font-size: 14px"> 
+
+                      We empower women in gender equality and make them to participate in earning. We are advancing the gender equality throughout the program and institutional practices. We advance women’s right and entitle on legal systems to reform the policies. 50 women participated in the program.
+
+                    </p>
+
+                   
+
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="tab-pane" id="tab-32">
+
+                <div class="row">
+
+                  <div class="col-lg-12 details order-2 order-lg-1">
+
+                    <h3>Culture Building and Awareness Programme    </h3>
+
+                    <p class="fst-italic" style="font-size: 14px"> 
+
+                      Traditional practices were diminishing in India due to the advancement of Science and Technologies. Even though India is the most populated country we are having good immune system due to our traditional foods.                    </p>
+
+                    <p class="fst-italic" style="font-size: 14px"> 
+
+                      But now-a-days in our daily routines we are forgetting our natural and traditional foods
+
+                      Our children are slowly forgetting the traditional methods and the foods so now we are developing weak immune system. So we are now easily affected with Virus. So we are taking this responsibility to create awareness to the people and to bring the traditional culture and practices to the current period for protecting us from pandemic diseases.
+
+                    </p>
+
+                     <p class="fst-italic" style="font-size: 14px"> 
+
+                      We arrive some delegates from this program. Regularly wash the hands and legs when we are entering the home with turmeric water. Periodically in take the traditional rice and unpolished rice in the home. Traditional foods like kuzhu, Kalli and other dishes will be added in our daily life. Using gingely oil, Groundnut oil and other natural foods.
+
+                    </p>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="tab-pane" id="tab-33">
+
+                <div class="row">
+
+                  <div class="col-lg-12 details order-2 order-lg-1">
+
+                    <h3>Childrens Day Celebration Programme</h3>
+
+                    <p class="fst-italic" style="font-size: 14px"> 
+
+                      In the lockdown children are forced to stay inside the house. They can’t allow to play in outside. They can’t go to any park, shopping and other places. So they are getting depression. We are conducting children day celebration in 15 batches with limited children. We encouraged them in fancy competition and dance. We distributed children kit to the students. The kit contains biscuits and chocolates and some snacks, sweets. The participated children get their prizes like school kits. So the children were very happy to get their prizes and happy kit                    </p>
+
+                    
+
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="tab-pane" id="tab-34">
+
+                <div class="row">
+
+                  <div class="col-lg-12 details order-2 order-lg-1">
+
+                    <h3>Yoga Awareness Programme    </h3>
+
+                    <p class="fst-italic" style="font-size: 14px"> 
+
+                      Sri Aurobindo says yoga is a methodical effort toward self-perfection through developing your talent potential on the physical, vital, mental, intellectual and spiritual levels. And the most fundamental step you can take toward expanding the limits of your consciousness is to gain mastery over your mind People are very mush disturbed in lock down. So after lock down we conducted yoga programme. This training will be given to men and women. The training was given to them for 10days.People got relaxation due to this and we made them practice daily. Now some of them has health improvement.                  '
+
+                  '  </p>
+
+                   
+
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="tab-pane" id="tab-35">
+
+                <div class="row">
+
+                  <div class="col-lg-12 details order-2 order-lg-1">
+
+                    <h3>Free Tuition</h3>
+
+                    <p class="fst-italic" style="font-size: 14px"> 
+
+                      In the evening the tuition was taken to the children. Minimum children were participated in the tuition due to corona lockdown. Children losing their continuity of studies due to schools were closed so to revise the lessons free tuition was conducted to the school children.                    
+
+                    </p>
+
+                   
+
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+          
+
+        </div>
+
+
+
+      </div>
+
+    </section><!-- End Specials Section -->
+
+
+
+
+
+<!--
+
+    <section id="programmes" class="about">
+
+      <div class="section-title">
+
+        <h2>Our  <span>Programmes</span></h2>
+
+      </div>
+
+
+
+      <div class="container-fluid">
+
+
+
+        <div class="row">
+
+          <div class="col-lg-6 d-flex flex-column justify-content-center align-items-stretch">
+
+            <ul class="nav flex-column">
+
+              <li class="nav-item">
+
+                <a class="nav-link active" aria-current="page" href="#p1">FREE DISTRIBUTION (MASK AND SANITIZER DISTRIBUTION FOR POOR PEOPLE)
+
+                </a>
+
+              <li class="nav-item">
+
+                <a class="nav-link active" aria-current="page" href="#">COVID -19 AWARENESS PROGRAMME  </a>
+
+
+
+              </li>
+
+              <li class="nav-item">
+
+                <a class="nav-link active" aria-current="page" href="#">SIDDHA MEDICINES ISSUED FOR POOR  </a>
+
+              </li>
+
+              <li class="nav-item">
+
+                <i class="bx bx-check-double"></i> FREE FOOD FOR POOR</li>
+
+                <li class="nav-item">
+
+                  <i class="bx bx-check-double"></i>  SKILL DEVELOPMENT PROGRAMME
+
+              </li>
+
+              <li class="nav-item">
+
+                <i class="bx bx-check-double"></i>  WOMEN EMPOWERMENT PROGRAMME
+
+              </li>
+
+              <li class="nav-item">
+
+                <i class="bx bx-check-double"></i>  CULTURE BUILDING AND AWARENESS PROGRAMME     
+
+              </li>
+
+
+
+            </ul>
+
+        
+
+
+
+          </div>
+
+          <div class="col-lg-6 d-flex flex-column justify-content-center align-items-stretch">
+
+                <div class="content">
+
+                    <p id="#p1">
+
+                      p1
+
+                    </p>
+
+
+
+                </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+
+      </div>
+
+    </section>
+
+-->    
+
+
+
+<section id="gallery" class="gallery">
+
+  <div class="container-fluid">
+
+    <br/>
+
+    <br/>
+
+
+
+    <div class="section-title">
+
+      <h2>Covid -19 Programme <span></span></h2>
+
+    </div>
+
+
+
+    <div class="row g-0">
+
+
+
+      <div class="col-lg-3 col-md-4">
+
+        <div class="gallery-item">
+
+          <a href="assets/img/gallery/1.jpg" class="gallery-lightbox">
+
+            <img src="assets/img/gallery/1.jpg" alt="" class="img-fluid">
+
+          </a>
+
+        </div>
+
+      </div>
+
+      <div class="col-lg-3 col-md-4">
+
+        <div class="gallery-item">
+
+          <a href="assets/img/gallery/2.jpg" class="gallery-lightbox">
+
+            <img src="assets/img/gallery/2.jpg" alt="" class="img-fluid">
+
+          </a>
+
+        </div>
+
+      </div>
+
+      <div class="col-lg-3 col-md-4">
+
+        <div class="gallery-item">
+
+          <a href="assets/img/gallery/4.jpg" class="gallery-lightbox">
+
+            <img src="assets/img/gallery/4.jpg" alt="" class="img-fluid">
+
+          </a>
+
+        </div>
+
+      </div>
+
+      <div class="col-lg-3 col-md-4">
+
+        <div class="gallery-item">
+
+          <a href="assets/img/gallery/5.jpg" class="gallery-lightbox">
+
+            <img src="assets/img/gallery/5.jpg" alt="" class="img-fluid">
+
+          </a>
+
+        </div>
+
+      </div>
+
+      <div class="col-lg-3 col-md-4">
+
+        <div class="gallery-item">
+
+          <a href="assets/img/gallery/6.jpg" class="gallery-lightbox">
+
+            <img src="assets/img/gallery/6.jpg" alt="" class="img-fluid">
+
+          </a>
+
+        </div>
+
+      </div>
+
+      <div class="col-lg-3 col-md-4">
+
+        <div class="gallery-item">
+
+          <a href="assets/img/gallery/7.jpg" class="gallery-lightbox">
+
+            <img src="assets/img/gallery/7.jpg" alt="" class="img-fluid">
+
+          </a>
+
+        </div>
+
+      </div>
+
+ 
+
+      <div class="col-lg-3 col-md-4">
+
+        <div class="gallery-item">
+
+          <a href="assets/img/gallery/8.jpg" class="gallery-lightbox">
+
+            <img src="assets/img/gallery/8.jpg" alt="" class="img-fluid">
+
+          </a>
+
+        </div>
+
+      </div>
+
+      <div class="col-lg-3 col-md-4">
+
+        <div class="gallery-item">
+
+          <a href="assets/img/gallery/9.jpg" class="gallery-lightbox">
+
+            <img src="assets/img/gallery/9.jpg" alt="" class="img-fluid">
+
+          </a>
+
+        </div>
+
+      </div>
+
+      <div class="col-lg-3 col-md-4">
+
+        <div class="gallery-item">
+
+          <a href="assets/img/gallery/10.jpg" class="gallery-lightbox">
+
+            <img src="assets/img/gallery/10.jpg" alt="" class="img-fluid">
+
+          </a>
+
+        </div>
+
+      </div>
+
+      <div class="col-lg-3 col-md-4">
+
+        <div class="gallery-item">
+
+          <a href="assets/img/gallery/12.jpg" class="gallery-lightbox">
+
+            <img src="assets/img/gallery/12.jpg" alt="" class="img-fluid">
+
+          </a>
+
+        </div>
+
+      </div>
+
+      <div class="col-lg-3 col-md-4">
+
+        <div class="gallery-item">
+
+          <a href="assets/img/gallery/14.jpg" class="gallery-lightbox">
+
+            <img src="assets/img/gallery/14.jpg" alt="" class="img-fluid">
+
+          </a>
+
+        </div>
+
+      </div>
+
+
+
+
+
+      <div class="col-lg-3 col-md-4">
+
+        <div class="gallery-item">
+
+          <a href="assets/img/gallery/15.jpg" class="gallery-lightbox">
+
+            <img src="assets/img/gallery/15.jpg" alt="" class="img-fluid">
+
+          </a>
+
+        </div>
+
+      </div>
+
+      <div class="col-lg-3 col-md-4">
+
+        <div class="gallery-item">
+
+          <a href="assets/img/gallery/16.jpg" class="gallery-lightbox">
+
+            <img src="assets/img/gallery/16.jpg" alt="" class="img-fluid">
+
+          </a>
+
+        </div>
+
+      </div>
+
+      <div class="col-lg-3 col-md-4">
+
+        <div class="gallery-item">
+
+          <a href="assets/img/gallery/17.jpg" class="gallery-lightbox">
+
+            <img src="assets/img/gallery/17.jpg" alt="" class="img-fluid">
+
+          </a>
+
+        </div>
+
+      </div>
+
+      <div class="col-lg-3 col-md-4">
+
+        <div class="gallery-item">
+
+          <a href="assets/img/gallery/18.jpg" class="gallery-lightbox">
+
+            <img src="assets/img/gallery/18.jpg" alt="" class="img-fluid">
+
+          </a>
+
+        </div>
+
+      </div>
+
+      <div class="col-lg-3 col-md-4">
+
+        <div class="gallery-item">
+
+          <a href="assets/img/gallery/19.jpg" class="gallery-lightbox">
+
+            <img src="assets/img/gallery/19.jpg" alt="" class="img-fluid">
+
+          </a>
+
+        </div>
+
+      </div>
+
+
+
+    </div>
+
+    <div class="section-title">
+
+      <h2>Tailering & Yoga Awareness Programmes <span></span></h2>
+
+    </div>
+
+    <div class="row g-0">
+
+        <div class="col-lg-3 col-md-4">
+
+          <div class="gallery-item">
+
+            <a href="assets/img/gallery/M1.jpg" class="gallery-lightbox">
+
+              <img src="assets/img/gallery/M1.jpg" alt="" class="img-fluid">
+
+            </a>
+
+          </div>
+
+        </div>
+
+        <div class="col-lg-3 col-md-4">
+
+          <div class="gallery-item">
+
+            <a href="assets/img/gallery/M2.jpg" class="gallery-lightbox">
+
+              <img src="assets/img/gallery/M2.jpg" alt="" class="img-fluid">
+
+            </a>
+
+          </div>
+
+        </div>
+
+        <div class="col-lg-3 col-md-4">
+
+          <div class="gallery-item">
+
+            <a href="assets/img/gallery/M3.jpg" class="gallery-lightbox">
+
+              <img src="assets/img/gallery/M3.jpg" alt="" class="img-fluid">
+
+            </a>
+
+          </div>
+
+        </div>
+
+        <div class="col-lg-3 col-md-4">
+
+          <div class="gallery-item">
+
+            <a href="assets/img/gallery/M4.jpg" class="gallery-lightbox">
+
+              <img src="assets/img/gallery/M4.jpg" alt="" class="img-fluid">
+
+            </a>
+
+          </div>
+
+        </div>
+
+        <div class="col-lg-3 col-md-4">
+
+          <div class="gallery-item">
+
+            <a href="assets/img/gallery/M5.jpg" class="gallery-lightbox">
+
+              <img src="assets/img/gallery/M5.jpg" alt="" class="img-fluid">
+
+            </a>
+
+          </div>
+
+        </div>
+
+        <div class="col-lg-3 col-md-4">
+
+          <div class="gallery-item">
+
+            <a href="assets/img/gallery/M6.jpg" class="gallery-lightbox">
+
+              <img src="assets/img/gallery/M6.jpg" alt="" class="img-fluid">
+
+            </a>
+
+          </div>
+
+        </div>
+
+        <div class="col-lg-3 col-md-4">
+
+          <div class="gallery-item">
+
+            <a href="assets/img/gallery/M7.jpg" class="gallery-lightbox">
+
+              <img src="assets/img/gallery/M7.jpg" alt="" class="img-fluid">
+
+            </a>
+
+          </div>
+
+        </div>
+
+        <div class="col-lg-3 col-md-4">
+
+          <div class="gallery-item">
+
+            <a href="assets/img/gallery/M8.jpg" class="gallery-lightbox">
+
+              <img src="assets/img/gallery/M8.jpg" alt="" class="img-fluid">
+
+            </a>
+
+          </div>
+
+        </div>
+
+        <div class="col-lg-3 col-md-4">
+
+          <div class="gallery-item">
+
+            <a href="assets/img/gallery/M9.jpg" class="gallery-lightbox">
+
+              <img src="assets/img/gallery/M9.jpg" alt="" class="img-fluid">
+
+            </a>
+
+          </div>
+
+        </div>
+
+
+
+
+
+    </div>
+
+
+
+  </div>
+
+</section><!-- End Gallery Section -->
+
+
+
+
+
+
+
+
+
+<section id="donation" class="contact">
+
+  <div class="container">
+
+    <div class="section-title">
+
+      <h2><span>Donation</span></h2>
+
+    </div>
+
+      <div class="container mt-2">
+
+          <div class="info-wrap">
+
+            <div class="row">
+
+              <div class="col-lg-2 col-md-6 info">
+
+              </div>
+
+              <div class="col-lg-7 col-md-6 info" style="margin-top:30px;">
+
+                <b> Trust Account Details </b> <br/>
+
+                Account Name : THAMARAI SOCIAL SERVICE TRUST <br/>
+
+                Bank Name: INDIAN BANK <br/>
+
+                BRANCH NAME : OOMACHIKULAM <br/>
+
+                A/c Number ; 6749465757 <br/>
+
+                Ifc code.      : IDIB000O013 <br/>
+
+                <hr/>
+
+                <b>GPay</b> <br/>
+
+                  THAMARAI SOCIAL SERVICE TRUST <br/>
+
+                  Mobile Number : 9443379981<br/>
+
+              </div>
+
+              <div class="col-lg-3 col-md-6 info">
+
+                <div class="gallery-item">
+
+                  <a href="assets/img/donation/donation.jpg" class="gallery-lightbox">
+
+                    <img src="assets/img/donation/donation.jpg" alt="" class="img-fluid">
+
+                  </a>
+
+                </div>
+
+
+
+              </div>
+
+
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+
+    </div>
+
+ </section>
+
+
+
+      
+
+
+
+
+
+      <!-- ======= Contact Section ======= -->
+
+    <section id="contact" class="contact">
+
+      <div class="container">
+
+        <br/> <br/>
+
+        <div class="section-title">
+
+          <h2><span>Contact</span> Us</h2>
+
+        </div>
+
+      </div>
+
+
+
+      <div class="container mt-5">
+
+
+
+        <div class="info-wrap">
+
+          <div class="row">
+
+
+
+            <div class="col-lg-12 col-md-6 info mt-4 mt-lg-0">
+
+              <i class="bi bi-geo-alt"></i>
+
+              <h4> Address :</h4>
+
+              <p>
+
+                <b>Thamarai Social Service Trust </b> <br/>
+
+                Annai Meenakshi Nagar (south) <br/>
+
+                18, Nethaji Street, Alathur Thirumalpuram Post, <br/>
+
+                Madurai 625011. <br/>
+
+                Taminadu. India    <br/>
+
+                <span>Email : thamaraisst2019@gmail.com  </span><br/>
+
+                <br>Phone : +91 94452 79981,+91 94433 79981  <br/>
+
+                </p>
+
+            </div>
+
+
+
+
+
+
+
+          </div>
+
+        </div>
+
+
+
+
+
+
+
+      </div>
+
+    </section><!-- End Contact Section -->
+
+
+
+  </main><!-- End #main -->
+
+
+
+  <!-- ======= Footer ======= -->
+
+  <footer id="footer">
+
+    <div class="container">
+
+      <h3>Thamarai Social Service Trust</h3>
+
+
+      <div class="credits">
+
+        <!-- All the links in the footer should remain intact. -->
+
+        <!-- You can delete the links only if you purchased the pro version. -->
+
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/delicious-free-restaurant-bootstrap-theme/ -->
+
+      </div>
+
+    </div>
+
+  </footer><!-- End Footer -->
+
+
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+
+
+  <!-- Vendor JS Files -->
+
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+
+
+  <!-- Template Main JS File -->
+
+  <script src="assets/js/main.js"></script>
+
+
+
+</body>
+
+
+
+</html>
